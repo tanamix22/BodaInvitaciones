@@ -137,16 +137,16 @@
 
 	$('nav .dropdown').hover(function(){
 		var $this = $(this);
-		// 	 timer;
-		// clearTimeout(timer);
+		// 	 ;
+		// clearTimeout();
 		$this.addClass('show');
 		$this.find('> a').attr('aria-expanded', true);
 		// $this.find('.dropdown-menu').addClass('animated-fast fadeInUp show');
 		$this.find('.dropdown-menu').addClass('show');
 	}, function(){
 		var $this = $(this);
-			// timer;
-		// timer = setTimeout(function(){
+			// ;
+		//  = setTimeout(function(){
 			$this.removeClass('show');
 			$this.find('> a').attr('aria-expanded', false);
 			// $this.find('.dropdown-menu').removeClass('animated-fast fadeInUp show');
@@ -301,9 +301,9 @@
 	bgVideo();
 
 
-	function makeTimer() {
+	function make() {
 
-		var endTime = new Date("01 November 2020 14:00:00 GMT-06:00");
+		var endTime = new Date("11 september 2021 18:00:00 GMT-05:00");
 		endTime = (Date.parse(endTime) / 1000);
 
 		var now = new Date();
@@ -327,6 +327,6 @@
 
 }
 
-setInterval(function() { makeTimer(); }, 1000);
+setInterval(function() { make(); }, 1000);
 
 })(jQuery);
